@@ -8,7 +8,7 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## AoC 2021 Progress
 
-One can see the Advent of Code questions from 2021 [here](https://adventofcode.com/2021/).
+The questions from The Advent of Code 2021 can be found [here](https://adventofcode.com/2021/).
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|
@@ -20,7 +20,7 @@ One can see the Advent of Code questions from 2021 [here](https://adventofcode.c
 
 I eventually reached my limit from fatigue and was forced to retire from continuing AoC for the year... though I am not too sure how long I would have lasted past day 14.
 
-One can see the Advent of Code questions from 2020 [here](https://adventofcode.com/2020/).
+The questions from The Advent of Code 2020 can be found [here](https://adventofcode.com/2020/).
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|
