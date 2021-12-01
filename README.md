@@ -12,7 +12,7 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|
-| ✔ [Day 1: Sonar Sweep](2021/src/com/arhamjs/day1/)| 🌟 | 🌟 |
+| ✔ [Day 1: Sonar Sweep](2021/src/com/arhamjs/day1/) <a href="2021/data/day1/"><sup>(data)</sup></a>| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
