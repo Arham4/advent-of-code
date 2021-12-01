@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Day1Part1 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File(args[0]));
+        Scanner scanner = new Scanner(new File("./data/day1/input.txt"));
         int increases = 0;
         int previousNumber = scanner.nextInt();
         while (scanner.hasNextInt()) {
