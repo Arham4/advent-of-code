@@ -1,8 +1,12 @@
 import part1
 
 
+def solution(inp):
+    return part1.solution(inp, 3)
+
+
 def result(inp):
-    return part1.result2(inp, 3)
+    return solution(inp)
 
 
 def test(example_inp):
