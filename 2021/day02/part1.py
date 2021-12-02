@@ -1,15 +1,8 @@
 def solution(inp):
-    horizontal = 0
-    depth = 0
-    for line in inp:
-        split = line.split(" ")
-        if "forward" in line:
-            horizontal += int(split[1])
-        elif "down" in line:
-            depth += int(split[1])
-        elif "up" in line:
-            depth -= int(split[1])
-    return horizontal * depth
+    horizontal = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "forward" in v, inp)))
+    downs = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "down" in v, inp)))
+    ups = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "up" in v, inp)))
+    return horizontal * (downs - ups)
 
 
 def result(inp):
