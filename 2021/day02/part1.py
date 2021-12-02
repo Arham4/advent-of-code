@@ -1,5 +1,5 @@
 def sum_term(term, inp):
-    return sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: term in v, inp)))
+    return sum([command.split(' ')[1] for command in [command for command in inp if term in command]])
 
 
 def solution(inp):

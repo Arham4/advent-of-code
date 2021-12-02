@@ -1,9 +1,11 @@
-import part1
+from part1 import sum_term
 
 
 def solution(inp):
-    horizontal = part1.sum_term('forward', inp)
-    depth = sum(map(lambda i_v: 0 if 'forward' not in i_v[1] else (part1.sum_term('down', inp[:i_v[0]]) - part1.sum_term('up', inp[:i_v[0]])) * int(i_v[1].split(' ')[1]), enumerate(inp)))
+    horizontal = sum_term('forward', inp)
+
+    forward_commands = [0 if 'forward' not in command else int(command.split(' ')[1]) for command in inp]
+    depth = sum([(sum_term('down', inp[:i]) - sum_term('up', inp[:i])) * command for i, command in enumerate(forward_commands)])
     return horizontal * depth
 
 
