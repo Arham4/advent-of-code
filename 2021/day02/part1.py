@@ -1,7 +1,11 @@
+def sum_term(term, inp):
+    return sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: term in v, inp)))
+
+
 def solution(inp):
-    horizontal = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "forward" in v, inp)))
-    downs = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "down" in v, inp)))
-    ups = sum(map(lambda v: int(v.split(' ')[1]), filter(lambda v: "up" in v, inp)))
+    horizontal = sum_term('forward', inp)
+    downs = sum_term('down', inp)
+    ups = sum_term('up', inp)
     return horizontal * (downs - ups)
 
 
