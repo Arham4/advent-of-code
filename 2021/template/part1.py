@@ -7,4 +7,4 @@ def result(inp):
 
 
 def test(example_inp):
-    assert result(example_inp) is None
+    assert result(example_inp) == None
