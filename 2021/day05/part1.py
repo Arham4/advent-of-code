@@ -22,13 +22,15 @@ def solution(inp, horizontal_only):
         if horizontal_only and left[0] != right[0] and left[1] != right[1]:
             continue
 
-        slopes = [slope_of(left[0], right[0]), slope_of(left[1], right[1])]
+        x_slope = slope_of(left[0], right[0])
+        y_slope = slope_of(left[1], right[1])
         current_pos = [left[0], left[1]]
 
         while current_pos[0] != float(right[0]) or current_pos[1] != float(right[1]):
             mark_map(map, current_pos[1], current_pos[0])
 
-            current_pos = [pos + slope for pos, slope in zip(current_pos, slopes)]
+            current_pos[0] += x_slope
+            current_pos[1] += y_slope
 
         mark_map(map, current_pos[1], current_pos[0])
 
