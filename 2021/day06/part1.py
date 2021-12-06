@@ -7,6 +7,7 @@ def solution(inp, count):
             fish.append([8, to_add])
     return sum([nums[1] for nums in fish])
 
+
 def result(inp):
     return solution(inp, 80)
 
