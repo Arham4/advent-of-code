@@ -4,7 +4,6 @@ def summation(num):
 
 def solution(inp):
     positions = [int(num) for num in inp[0].split(',')]
-
     return min([sum([summation(abs(positions[i] - x)) for i in range(len(positions))]) for x in range(max(positions))])
 
 
