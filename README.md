@@ -17,6 +17,9 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 3: Binary Diagnostic](2021/day03)| 🌟 | 🌟 |
 | ✔ [Day 4: Giant Squid](2021/day04)| 🌟 | 🌟 |
 | ✔ [Day 5: Hydrothermal Venture](2021/day05)| 🌟 | 🌟 |
+| ✔ [Day 6: Lanternfish](2021/day06)| 🌟 | 🌟 |
+| ✔ [Day 7: The Treachery of Whales](2021/day07)| 🌟 | 🌟 |
+| ✔ [Day 8: Seven Segment Search](2021/day08)| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
