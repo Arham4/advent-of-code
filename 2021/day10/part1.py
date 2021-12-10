@@ -19,7 +19,7 @@ def solution(inp):
     for line in inp:
         stack = []
         for char in line:
-            if char == '{' or char == '(' or char == '[' or char == '<':
+            if char in matchings:
                 stack.append(char)
             else:
                 top = stack.pop()
