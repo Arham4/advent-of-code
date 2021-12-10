@@ -1,29 +1,32 @@
-rewards = {
-    '{': ['}', 3],
-    '(': [')', 1],
-    '[': [']', 2],
-    '<': ['>', 4],
+import part1
+
+
+points = {
+    '{': 3,
+    '(': 1,
+    '[': 2,
+    '<': 4,
 }
 
 
 def solution(inp):
     scores = []
     for line in inp:
-        points = 0
+        score = 0
         stack = []
         consider = True
         for char in line:
-            if char in rewards:
+            if char in part1.matchings:
                 stack.append(char)
             else:
                 top = stack.pop()
-                if char != rewards[top][0]:
+                if char != part1.matchings[top]:
                     consider = False
                     break
         if consider:
             for fault in reversed(stack):
-                points = points * 5 + rewards[fault][1]
-            scores.append(points)
+                score = score * 5 + points[fault]
+            scores.append(score)
     scores.sort()
     return scores[len(scores) // 2]
 
