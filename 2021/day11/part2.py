@@ -1,62 +1,22 @@
-def in_limits(nums, y, x):
-    if 0 <= y < len(nums) and 0 <= x < len(nums[0]):
-        return True
-    return False
-
-
-flashes = 0
-offsets = [
-    [0, -1],
-    [1, -1],
-    [1, 0],
-    [1, 1],
-    [0, 1],
-    [-1, 1],
-    [-1, 0],
-    [-1, -1],
-]
-
-def print_pretty(nums):
-    for line in nums:
-        for num in line:
-            print(num, end='')
-        print()
-
-
-def try_flash(nums, y, x, visited):
-    global flashes
-    if in_limits(nums, y, x) and (y, x) not in visited:
-        nums[y][x] += 1
-        if nums[y][x] >= 10:
-            visited.add((y, x))
-            nums[y][x] = 0
-            flashes += 1
-            for offset in offsets:
-                try_flash(nums, y + offset[0], x + offset[1], visited)
+import part1
 
 
 def solution(inp):
-    global flashes
-    nums = []
-    for line in inp:
-        line_list = []
-        for char in line:
-            line_list.append(int(char))
-        nums.append(line_list)
+    nums = [[int(num) for num in line] for line in inp]
 
-    answer = 0
-    for i in range(2147000000):
-        flashes_before = flashes
+    steps = 0
+    while True:
         visited = set()
+        flashes_before = part1.flashes
         for y in range(len(inp)):
             for x in range(len(inp[0])):
-                try_flash(nums, y, x, visited)
-        if flashes - flashes_before == len(inp) * len(inp[0]):
-            answer = i + 1
+                part1.try_flash(nums, y, x, visited)
+        if part1.flashes - flashes_before == len(inp) * len(inp[0]):
             break
+        steps += 1
 
-    flashes = 0
-    return answer
+    part1.flashes = 0
+    return steps + 1
 
 
 def result(inp):

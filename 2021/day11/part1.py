@@ -1,20 +1,11 @@
+flashes = 0
+
+
 def in_limits(nums, y, x):
     if 0 <= y < len(nums) and 0 <= x < len(nums[0]):
         return True
     return False
 
-
-flashes = 0
-offsets = [
-    [0, -1],
-    [1, -1],
-    [1, 0],
-    [1, 1],
-    [0, 1],
-    [-1, 1],
-    [-1, 0],
-    [-1, -1],
-]
 
 def print_pretty(nums):
     for line in nums:
@@ -31,18 +22,14 @@ def try_flash(nums, y, x, visited):
             visited.add((y, x))
             nums[y][x] = 0
             flashes += 1
-            for offset in offsets:
-                try_flash(nums, y + offset[0], x + offset[1], visited)
+            for y2 in range(y - 1, y + 2):
+                for x2 in range(x - 1, x + 2):
+                    try_flash(nums, y2, x2, visited)
 
 
 def solution(inp):
     global flashes
-    nums = []
-    for line in inp:
-        line_list = []
-        for char in line:
-            line_list.append(int(char))
-        nums.append(line_list)
+    nums = [[int(num) for num in line] for line in inp]
 
     for i in range(100):
         visited = set()
