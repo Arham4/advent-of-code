@@ -2,16 +2,7 @@ flashes = 0
 
 
 def in_limits(nums, y, x):
-    if 0 <= y < len(nums) and 0 <= x < len(nums[0]):
-        return True
-    return False
-
-
-def print_pretty(nums):
-    for line in nums:
-        for num in line:
-            print(num, end='')
-        print()
+    return 0 <= y < len(nums) and 0 <= x < len(nums[0])
 
 
 def try_flash(nums, y, x, visited):
