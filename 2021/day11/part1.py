@@ -29,7 +29,7 @@ def solution(inp):
                 try_flash(nums, y, x, visited)
 
     answer = flashes
-    flashes = 0 # by the way this line cost me 40 minutes of my life
+    flashes = 0  # by the way this line cost me 40 minutes of my life
     return answer
 
 
