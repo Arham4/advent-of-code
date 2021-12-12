@@ -23,6 +23,7 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 9: Smoke Basin](2021/day09)| 🌟 | 🌟 |
 | ✔ [Day 10: Syntax Scoring](2021/day10)| 🌟 | 🌟 |
 | ✔ [Day 11: Dumbo Octopus](2021/day11)| 🌟 | 🌟 |
+| ✔ [Day 12: Passage Pathing](2021/day12)| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
