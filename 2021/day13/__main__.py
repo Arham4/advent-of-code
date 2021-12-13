@@ -4,7 +4,6 @@ from pathlib import Path
 
 import part1
 import part2
-import v3
 
 
 def read_file(filename):
