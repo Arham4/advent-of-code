@@ -25,6 +25,7 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 11: Dumbo Octopus](2021/day11)| 🌟 | 🌟 |
 | ✔ [Day 12: Passage Pathing](2021/day12)| 🌟 | 🌟 |
 | ✔ [Day 13: Transparent Origami](2021/day13)| 🌟 | 🌟 |
+| ✔ [Day 14: Extended Polymerization](2021/day14)| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
