@@ -1,46 +1,69 @@
-def in_bounds(inp, y, x):
-    return 0 <= y < len(inp) and 0 <= x < len(inp[0])
+def wrap_num(num, offset):
+    new_num = num + offset
+    if new_num > 9:
+        return new_num - 9
+    return new_num
 
 
-def smallest_dist(to_visit, dist):
-    smallest_value = 100000000
-    smallest_key = None
-    for current in to_visit:
-        if dist[current] < smallest_value:
-            smallest_value = dist[current]
-            smallest_key = current
-    return smallest_key
+def in_bounds(inp, expansions, y, x):
+    return 0 <= y < len(inp) * expansions and 0 <= x < len(inp[0]) * expansions
 
 
-def solution(inp):
-    to_visit = set()
-
-    dist = {}
-
+def solution(inp, expansions):
+    maze = [[0] * (len(inp[0]) * expansions) for _ in (inp * expansions)]
     for y in range(len(inp)):
         for x in range(len(inp[0])):
-            dist[(y, x)] = 10000000
-            to_visit.add((y, x))
+            value = int(inp[y][x])
+            for y2 in range(expansions):
+                for x2 in range(expansions):
+                    pos = (y + len(inp) * y2, x + len(inp[0]) * x2)
+                    maze[pos[0]][pos[1]] = wrap_num(value, y2 + x2)
 
-    dist[(0, 0)] = 0
+    dp = [[214700000000000000] * (len(inp[0]) * expansions) for _ in (inp * expansions)]
+    while True:
+        before = dp[len(dp) - 1][len(dp[0]) - 1]
 
-    while len(to_visit) > 0:
-        current = smallest_dist(to_visit, dist)
+        for y in range(len(maze)):
+            for x in range(len(maze[0])):
+                found = False
+                above = 214700000000000000
+                if in_bounds(inp, expansions, y - 1, x):
+                    above = dp[y - 1][x]
+                    if above == 214700000000000000:
+                        above = int(inp[y - 1][x])
+                    found = True
 
-        to_visit.remove(current)
+                left = 214700000000000000
+                if in_bounds(inp, expansions, y, x - 1):
+                    left = dp[y][x - 1]
+                    if left == 214700000000000000:
+                        left = int(inp[y][x - 1])
+                    found = True
 
-        for offset in [[-1, 0], [1, 0], [0, -1], [0, 1]]:
-            next = (current[0] + offset[0], current[1] + offset[1])
-            if in_bounds(inp, next[0], next[1]) and next in to_visit:
-                this_dist = dist[current] + int(inp[next[0]][next[1]])
-                if this_dist < dist[next]:
-                    dist[next] = this_dist
+                bottom = 214700000000000000
+                if in_bounds(inp, expansions, y + 1, x):
+                    bottom = dp[y + 1][x]
+                    found = True
 
-    return dist[(len(inp) - 1, len(inp[0]) - 1)]
+                right = 214700000000000000
+                if in_bounds(inp, expansions, y, x + 1):
+                    right = dp[y][x + 1]
+                    found = True
+
+                smallest = min(above, left, bottom, right)
+                if y == 0 and x == 0 or not found:
+                    dp[y][x] = 0
+                else:
+                    dp[y][x] = maze[y][x] + smallest
+
+        if dp[len(dp) - 1][len(dp[0]) - 1] == before:
+            break
+
+    return dp[len(dp) - 1][len(dp[0]) - 1]
 
 
 def result(inp):
-    return solution(inp)
+    return solution(inp, 1)
 
 
 def test(example_inp):

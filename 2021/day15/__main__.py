@@ -17,9 +17,9 @@ def main():
     example = read_file("example.txt")
     inp = read_file("input.txt")
 
-    #print("--- Part One ---")
-    #part1.test(example)
-    #print("Result:", part1.result(inp))
+    print("--- Part One ---")
+    part1.test(example)
+    print("Result:", part1.result(inp))
 
     print("--- Part Two ---")
     part2.test(example)
