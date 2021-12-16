@@ -27,6 +27,7 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 13: Transparent Origami](2021/day13)| 🌟 | 🌟 |
 | ✔ [Day 14: Extended Polymerization](2021/day14)| 🌟 | 🌟 |
 | ✔ [Day 15: Chiton](2021/day15)| 🌟 | 🌟 |
+| ✔ [Day 16: Packet Decoder](2021/day16)| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
