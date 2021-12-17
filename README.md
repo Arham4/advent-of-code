@@ -28,6 +28,7 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 14: Extended Polymerization](2021/day14)| 🌟 | 🌟 |
 | ✔ [Day 15: Chiton](2021/day15)| 🌟 | 🌟 |
 | ✔ [Day 16: Packet Decoder](2021/day16)| 🌟 | 🌟 |
+| ✔ [Day 17: Trick Shot](2021/day17)| 🌟 | 🌟 |
 
 ## AoC 2020 Progress
 
