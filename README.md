@@ -8,6 +8,8 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## AoC 2021 Progress
 
+2021 was a more productive AoC year. I managed to get to day 17, and then, after trying day 18 for many, many hours, eventually failed at completing it and therefore did not complete AoC 2021.
+
 The questions from The Advent of Code 2021 can be found [here](https://adventofcode.com/2021/).
 
 | Day  | Part One | Part Two |
@@ -29,6 +31,14 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ✔ [Day 15: Chiton](2021/day15)| 🌟 | 🌟 |
 | ✔ [Day 16: Packet Decoder](2021/day16)| 🌟 | 🌟 |
 | ✔ [Day 17: Trick Shot](2021/day17)| 🌟 | 🌟 |
+| ❌ [Day 18: Snailfish](2021/day18) | 🚫 | 🚫 |
+| ❌ Day 19: Beacon Scanner | 🚫 | 🚫 |
+| ❌ Day 20: Trench Map | 🚫 | 🚫 |
+| ❌ Day 21: Dirac Dice | 🚫 | 🚫 |
+| ❌ Day 22: Reactor Reboot | 🚫 | 🚫 |
+| ❌ Day 23: Amphipod | 🚫 | 🚫 |
+| ❌ Day 24: Arithmetic Logic Unit | 🚫 | 🚫 |
+| ❌ Day 25: Sea Cucumber | 🚫 | 🚫 |
 
 ## AoC 2020 Progress
 
