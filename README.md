@@ -6,6 +6,38 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 [Advent of Code](http://adventofcode.com) is an online event created by [Eric Wastl](https://github.com/topaz). Each year, starting on Dec 1st, an advent calendar of small programming puzzles are unlocked once a day at midnight (EST/UTC-5). Developers of all skill sets are encouraged to solve them in any programming language they choose!
 
+## AoC 2022 Progress
+
+The questions from The Advent of Code 2022 can be found [here](https://adventofcode.com/2022/).
+
+| Day  | Part One | Part Two |
+|---|:---:|:---:|
+| ⌛ [Day 1: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 2: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 3: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 4: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 5: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 6: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 7: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 8: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 9: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 10: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 11: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 12: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 13: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 14: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 15: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 16: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 17: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 18: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 19: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 20: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 21: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 22: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 23: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 24: ?](#) | ⌛ | ⌛ |
+| ⌛ [Day 25: ?](#) | ⌛ | ⌛ |
+
 ## AoC 2021 Progress
 
 2021 was a more productive AoC year. I managed to get to day 17, and then, after trying day 18 for many, many hours, eventually failed at completing it and therefore did not complete AoC 2021.
