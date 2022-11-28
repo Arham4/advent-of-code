@@ -72,6 +72,8 @@ The questions from The Advent of Code 2021 can be found [here](https://adventofc
 | ❌ Day 24: Arithmetic Logic Unit | 🚫 | 🚫 |
 | ❌ Day 25: Sea Cucumber | 🚫 | 🚫 |
 
+![The Advent of Code 2021 personal stats](https://i.imgur.com/H0Zi7vV.png)
+
 ## AoC 2020 Progress
 
 2020 was a quite the challenge for my schedule. I started working at a COVID-19 lab in November and had very taxing hours. There were some days I did the AoC at work and even some days in which I did the problems after a 16 hour shift.
@@ -107,3 +109,5 @@ The questions from The Advent of Code 2020 can be found [here](https://adventofc
 | ❌ Day 23: Crab Cups| 🚫 | 🚫 |
 | ❌ Day 24: Lobby Layout| 🚫 | 🚫 |
 | ❌ Day 25: Combo Breaker| 🚫 | 🚫 |
+
+![The Advent of Code 2020 personal stats](https://i.imgur.com/wGAAJYE.png)
