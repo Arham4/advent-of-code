@@ -10,6 +10,8 @@ import json
 from json import *
 import re
 from re import *
+import heapq
+from heapq import *
 
 
 def solution(inp):
