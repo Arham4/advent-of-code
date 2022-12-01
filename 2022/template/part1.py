@@ -23,9 +23,7 @@ def result(inp):
 
 
 def test(examples):
-    '''
     example = 0
     exp = 0
     res = result(examples[example])
     assert res == exp, f"example {example}: result was {res}, expected {exp}"
-    '''
