@@ -12,7 +12,7 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|
-| ⌛ [Day 1: ?](#) | ⌛ | ⌛ |
+| ✔ [Day 1: Calorie Counting](2022/day01)| 🌟 | 🌟 |
 | ⌛ [Day 2: ?](#) | ⌛ | ⌛ |
 | ⌛ [Day 3: ?](#) | ⌛ | ⌛ |
 | ⌛ [Day 4: ?](#) | ⌛ | ⌛ |
