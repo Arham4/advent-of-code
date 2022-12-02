@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 
-from pathlib import Path
 import os
-
-import part1
-import part2
 import requests
 import pathlib
 import json
 
+import part1
+import part2
+
 
 def read_file(filename, split_lines):
-    path = Path(__file__).parent.resolve()
+    path = pathlib.Path(__file__).parent.resolve()
     with open(path / filename, 'r') as f:
         file = f.read()
         if split_lines:
