@@ -15,8 +15,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 1: Calorie Counting](2022/day01)| 🌟 | 🌟 |
 | ✔ [Day 2: Rock Paper Scissors](2022/day02) | 🌟 | 🌟 |
 | ✔ [Day 3: Rucksack Reorganization](2022/day03) | 🌟 | 🌟 |
+| ✔ [Day 4: Camp Cleanup](2022/day04) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/ZOOhH87.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/SYCPzw4.png)
 
 ## AoC 2021 Progress
 
