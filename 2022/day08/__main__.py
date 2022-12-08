@@ -6,7 +6,7 @@ import part1
 import part2
 
 
-def read_file(filename: str, split_lines: bool) -> str:
+def read_file(filename: str, split_lines: bool):
     path = pathlib.Path(__file__).parent.resolve()
     with open(path / filename, 'r') as f:
         file = f.read()
@@ -15,12 +15,12 @@ def read_file(filename: str, split_lines: bool) -> str:
         return file
 
 
-def save_file(filename: str, text: str):
+def save_file(filename: str, text: str) -> None:
     with open(filename, 'w+') as file:
         file.write(text)
 
 
-def read_input(split_lines: bool) -> str:
+def read_input(split_lines: bool):
     day = pathlib.PurePath(__file__).parent.name.replace('day0', '').replace('day', '')
 
     with open('../cookies.json', 'r') as cookies_file:
