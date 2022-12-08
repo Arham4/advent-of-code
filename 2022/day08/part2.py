@@ -1,21 +1,8 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
+from typing import List
 import part1
 
 
-def solution(inp):
+def solution(inp: List[str]) -> int:
     scores = {}
     for y in range(len(inp)):
         for x in range(len(inp[y])):
@@ -47,11 +34,11 @@ def solution(inp):
     return max(scores.values())
 
 
-def result(inp):
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 8
     res = result(examples[example])

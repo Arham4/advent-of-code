@@ -1,20 +1,7 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
+from typing import List
 
 
-def solution(inp):
+def solution(inp: List[str]) -> int:
     sum = 0
     for line in inp:
         first = set(line[:len(line) // 2])
@@ -28,12 +15,11 @@ def solution(inp):
     return sum
 
 
-
-def result(inp):
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 157
     res = result(examples[example])

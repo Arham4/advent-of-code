@@ -1,20 +1,8 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
+from collections import defaultdict
+from typing import List
 
 
-def solution(inp):
+def solution(inp: List[str]) -> str:
     stacks = defaultdict(list)
     moving = False
     for line in inp:
@@ -43,11 +31,12 @@ def solution(inp):
         output += stacks[key][-1].replace('[', '').replace(']', '')
     return output
 
-def result(inp):
+
+def result(inp: List[str]) -> str:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 'MCD'
     res = result(examples[example])

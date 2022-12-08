@@ -1,29 +1,27 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
-import part1
+from typing import List
 
 
-def solution(inp):
-    return part1.find_first(inp[0], 14)
+def find_first(line: str, threshold: int) -> int:
+    curr = []
+    for i in range(len(line)):
+        curr.insert(0, line[i])
+        if len(curr) == threshold:
+            as_set = set(curr)
+            if len(as_set) == threshold:
+                return i + 1
+            curr.pop()
+    return -1
 
 
-def result(inp):
+def solution(inp: List[str]) -> int:
+    return find_first(inp[0], 14)
+
+
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 19
     res = result(examples[example])

@@ -1,20 +1,7 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
+from typing import List
 
 
-def find_first(line, threshold):
+def find_first(line: str, threshold: int) -> int:
     curr = []
     for i in range(len(line)):
         curr.insert(0, line[i])
@@ -26,15 +13,15 @@ def find_first(line, threshold):
     return -1
 
 
-def solution(inp):
+def solution(inp: List[str]) -> int:
     return find_first(inp[0], 4)
 
 
-def result(inp):
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 7
     res = result(examples[example])

@@ -1,26 +1,14 @@
-import collections
-from collections import *
-import functools
-from functools import *
-import itertools
-from itertools import *
-import math
-from math import *
-import json
-from json import *
-import re
-from re import *
-import heapq
-from heapq import *
+from collections import defaultdict
+from typing import List
 
 
-def go_up_one_level(current_directory):
+def go_up_one_level(current_directory: str) -> str:
     if current_directory == '/':
         return '/'
     return current_directory[:current_directory.rfind('/')]
 
 
-def find_size_of_directory(paths, current_directory):
+def find_size_of_directory(paths: dict, current_directory: str) -> int:
     amount = 0
     for file in paths[current_directory]:
         if file.startswith('dir '):
@@ -31,7 +19,7 @@ def find_size_of_directory(paths, current_directory):
     return amount
 
 
-def populate_paths(inp):
+def populate_paths(inp: List[str]) -> dict:
     paths = defaultdict(list)
     current_directory = ''
     populating = False
@@ -54,7 +42,7 @@ def populate_paths(inp):
     return paths
 
 
-def solution(inp):
+def solution(inp: List[str]) -> int:
     paths = populate_paths(inp)
     answer = 0
     limit = 100000
@@ -65,11 +53,11 @@ def solution(inp):
     return answer
 
 
-def result(inp):
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
-def test(examples):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 95437
     res = result(examples[example])
