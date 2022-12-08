@@ -19,29 +19,29 @@ def solution(inp):
     scores = {}
     for y in range(len(inp)):
         for x in range(len(inp[y])):
-            not_visible_above = part1.not_visible_above(inp, y, x)
-            if True in not_visible_above:
-                up_value = not_visible_above.index(True) + 1
+            visibility_above = part1.is_visible_above(inp, y, x)
+            if False in visibility_above:
+                up_value = visibility_above.index(False) + 1
             else:
-                up_value = len(not_visible_above)
+                up_value = len(visibility_above)
 
-            not_visible_on_left = part1.not_visible_on_left(inp, y, x)
-            if True in not_visible_on_left:
-                left_value = not_visible_on_left.index(True) + 1
+            visibility_left = part1.is_visible_on_left(inp, y, x)
+            if False in visibility_left:
+                left_value = visibility_left.index(False) + 1
             else:
-                left_value = len(not_visible_on_left)
+                left_value = len(visibility_left)
 
-            not_visible_on_right = part1.not_visible_on_right(inp, y, x)
-            if True in not_visible_on_right:
-                right_value = not_visible_on_right.index(True) + 1
+            visibility_right = part1.is_visible_on_right(inp, y, x)
+            if False in visibility_right:
+                right_value = visibility_right.index(False) + 1
             else:
-                right_value = len(not_visible_on_right)
+                right_value = len(visibility_right)
 
-            not_visible_below = part1.not_visible_below(inp, y, x)
-            if True in not_visible_below:
-                down_value = not_visible_below.index(True) + 1
+            visibility_below = part1.is_visible_below(inp, y, x)
+            if False in visibility_below:
+                down_value = visibility_below.index(False) + 1
             else:
-                down_value = len(not_visible_below)
+                down_value = len(visibility_below)
 
             scores[(y, x)] = up_value * left_value * right_value * down_value
     return max(scores.values())
