@@ -19,8 +19,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 5: Supply Stacks](2022/day05) | 🌟 | 🌟 |
 | ✔ [Day 6: Tuning Trouble](2022/day06) | 🌟 | 🌟 |
 | ✔ [Day 7: No Space Left On Device](2022/day07) | 🌟 | 🌟 |
+| ✔ [Day 8: Treetop Tree House](2022/day08) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/THb0CdV.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/Hd9QIjj.png)
 
 ## AoC 2021 Progress
 
