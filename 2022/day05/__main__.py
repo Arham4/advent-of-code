@@ -1,4 +1,3 @@
-from typing import List, Tuple
 import os
 import requests
 import pathlib
