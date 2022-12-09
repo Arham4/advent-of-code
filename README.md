@@ -20,8 +20,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 6: Tuning Trouble](2022/day06) | 🌟 | 🌟 |
 | ✔ [Day 7: No Space Left On Device](2022/day07) | 🌟 | 🌟 |
 | ✔ [Day 8: Treetop Tree House](2022/day08) | 🌟 | 🌟 |
+| ✔ [Day 9: Rope Bridge](2022/day09) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/Hd9QIjj.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/0pryRLe.png)
 
 ## AoC 2021 Progress
 
