@@ -21,8 +21,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 7: No Space Left On Device](2022/day07) | 🌟 | 🌟 |
 | ✔ [Day 8: Treetop Tree House](2022/day08) | 🌟 | 🌟 |
 | ✔ [Day 9: Rope Bridge](2022/day09) | 🌟 | 🌟 |
+| ✔ [Day 10: Cathode-Ray Tube](2022/day10) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/0pryRLe.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/rtskrdU.png)
 
 ## AoC 2021 Progress
 
