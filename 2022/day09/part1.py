@@ -20,7 +20,7 @@ def move_tail(head: List[int], tail: List[int]):
         tail[1] += magnitude[1] // max(1, abs(magnitude[1]))
 
 
-def solution(inp: List[str]):
+def solution(inp: List[str]) -> int:
     head = [0, 0]
     tail = [0, 0]
 
@@ -39,7 +39,7 @@ def solution(inp: List[str]):
     return len(visited)
 
 
-def result(inp: List[str]):
+def result(inp: List[str]) -> int:
     return solution(inp)
 
 
