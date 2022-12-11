@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import List
+from typing import List, DefaultDict
 
 
 def go_up_one_level(current_directory: str) -> str:
@@ -8,7 +8,7 @@ def go_up_one_level(current_directory: str) -> str:
     return current_directory[:current_directory.rfind('/')]
 
 
-def find_size_of_directory(paths: dict, current_directory: str) -> int:
+def find_size_of_directory(paths: DefaultDict[str, List[str]], current_directory: str) -> int:
     amount = 0
     for file in paths[current_directory]:
         if file.startswith('dir '):
@@ -19,7 +19,7 @@ def find_size_of_directory(paths: dict, current_directory: str) -> int:
     return amount
 
 
-def populate_paths(inp: List[str]) -> dict:
+def populate_paths(inp: List[str]) -> DefaultDict[str, List[str]]:
     paths = defaultdict(list)
     current_directory = ''
     populating = False
