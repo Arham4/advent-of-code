@@ -23,7 +23,7 @@ def solution(inp: List[str]) -> int:
     grid[ending_position[0]][ending_position[1]] = 'z'
 
     queue = [(position, 0) for position in starting_positions]
-    return part1.find_e(inp, ending_position, queue)
+    return part1.find_e(grid, ending_position, queue)
 
 
 def result(inp: List[str]) -> int:

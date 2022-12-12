@@ -47,11 +47,11 @@ def solution(inp: List[str]) -> int:
             elif inp[row][col] == 'E':
                 ending_position = (row, col)
 
-    grid[ending_position[0]][ending_position[1]] = 'a'
+    grid[starting_position[0]][starting_position[1]] = 'a'
     grid[ending_position[0]][ending_position[1]] = 'z'
 
     queue = [(starting_position, 0)]
-    return find_e(inp, ending_position, queue)
+    return find_e(grid, ending_position, queue)
 
 
 def result(inp: List[str]) -> int:
