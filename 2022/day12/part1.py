@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
 
-def find_e(inp: List[str], goal: Tuple[int, int], queue: List[Tuple[Tuple[int, int], int]]) -> int:
+def find_e(inp: List[List[str]], goal: Tuple[int, int], queue: List[Tuple[Tuple[int, int], int]]) -> int:
     offsets = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     visited = set()
