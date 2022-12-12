@@ -23,8 +23,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 9: Rope Bridge](2022/day09) | 🌟 | 🌟 |
 | ✔ [Day 10: Cathode-Ray Tube](2022/day10) | 🌟 | 🌟 |
 | ✔ [Day 11: Monkey in the Middle](2022/day11) | 🌟 | 🌟 |
+| ✔ [Day 12: Hill Climbing Algorithm](2022/day12) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/ZTOkup0.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/e4icYWE.png)
 
 ## AoC 2021 Progress
 
