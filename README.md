@@ -25,8 +25,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 11: Monkey in the Middle](2022/day11) | 🌟 | 🌟 |
 | ✔ [Day 12: Hill Climbing Algorithm](2022/day12) | 🌟 | 🌟 |
 | ✔ [Day 13: Distress Signal](2022/day13) | 🌟 | 🌟 |
+| ✔ [Day 14: Regolith Reservoir](2022/day14) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/BksF3vU.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/B872wZb.png)
 
 ## AoC 2021 Progress
 
