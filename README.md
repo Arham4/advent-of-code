@@ -26,8 +26,11 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 12: Hill Climbing Algorithm](2022/day12) | 🌟 | 🌟 |
 | ✔ [Day 13: Distress Signal](2022/day13) | 🌟 | 🌟 |
 | ✔ [Day 14: Regolith Reservoir](2022/day14) | 🌟 | 🌟 |
+| ✔ [Day 15: Beacon Exclusion Zone](2022/day15) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/B872wZb.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/ftznEeQ.png)
+
+Note: I did day 15 about 1.5 hours later.
 
 ## AoC 2021 Progress
 
