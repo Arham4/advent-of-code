@@ -22,22 +22,19 @@ def manhattan_distance(x1, y1, x2, y2):
 '''
 My original flood-fill solution before I realized the problem needs to be more optimized lol
 
-def fill_manhattan(origin_x, origin_y, original_distance, locations, sensors, beacons):
-    stack = [(origin_x, origin_y, original_distance)]
+def fill_manhattan(x, y, distance, locations, sensors, beacons, visited):
+    if distance == -1:
+        return
 
-    while stack:
-        x, y, distance = stack.pop()
+    if (x, y) not in sensors and (x, y) not in beacons:
+        locations[y].add(x)
 
-        if distance == -1:
-            continue
+    visited.add((x, y))
 
-        if (x, y) not in sensors and (x, y) not in beacons:
-            locations[y].add(x)
-
-        stack.append((x + 1, y, distance - 1))
-        stack.append((x - 1, y, distance - 1))
-        stack.append((x, y + 1, distance - 1))
-        stack.append((x, y - 1, distance - 1))
+    fill_manhattan(x + 1, y, distance - 1, locations, sensors, beacons, visited)
+    fill_manhattan(x - 1, y, distance - 1, locations, sensors, beacons, visited)
+    fill_manhattan(x, y + 1, distance - 1, locations, sensors, beacons, visited)
+    fill_manhattan(x, y - 1, distance - 1, locations, sensors, beacons, visited)
 '''
 
 

@@ -60,7 +60,7 @@ def solution(inp, limit):
         ranges.sort()
         remove_overlaps(ranges)
 
-        if len(ranges) != 1:
+        if len(ranges) == 2:
             y = row
             x = ranges[0][1] + 1
             return x * 4000000 + y
