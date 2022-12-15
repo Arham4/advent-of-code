@@ -1,12 +1,12 @@
-from typing import List
+from typing import List, Tuple, Dict, Set
 from collections import *
 
 
-def manhattan_distance(x1: int, y1: int, x2: int, y2: int):
+def manhattan_distance(x1: int, y1: int, x2: int, y2: int) -> int:
     return abs(x1 - x2) + abs(y1 - y2)
 
 
-def parse_input(inp: List[str]):
+def parse_input(inp: List[str]) -> Tuple[Set[Tuple[int, int]], Dict[Tuple[int, int], int], Set[Tuple[int, int]]]:
     sensors = set()
     distances = {}
     beacons = set()
@@ -26,7 +26,7 @@ def parse_input(inp: List[str]):
     return sensors, distances, beacons
 
 
-def solution(inp: List[str], target: int):
+def solution(inp: List[str], target: int) -> int:
     locations = defaultdict(set)
     sensors, distances, beacons = parse_input(inp)
 
@@ -64,11 +64,11 @@ def fill_manhattan(x, y, distance, locations, sensors, beacons):
 '''
 
 
-def result(inp: List[str], target: int):
+def result(inp: List[str], target: int) -> int:
     return solution(inp, target)
 
 
-def test(examples: List[List[str]]):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 26
     res = result(examples[example], 10)

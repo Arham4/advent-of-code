@@ -3,7 +3,7 @@ from typing import List, Tuple
 import part1
 
 
-def remove_overlaps(ranges: List[Tuple[int, int]]):
+def remove_overlaps(ranges: List[Tuple[int, int]]) -> None:
     for i in range(len(ranges) - 1):
         if ranges[i][1] + 1 >= ranges[i + 1][0]:
             ranges[i] = (min(ranges[i][0], ranges[i + 1][0]), max(ranges[i][1], ranges[i + 1][1]))
@@ -12,7 +12,7 @@ def remove_overlaps(ranges: List[Tuple[int, int]]):
             break
 
 
-def solution(inp: List[str], limit: int):
+def solution(inp: List[str], limit: int) -> int:
     sensors, distances, beacons = part1.parse_input(inp)
 
     for row in range(limit):
@@ -37,11 +37,11 @@ def solution(inp: List[str], limit: int):
     return -1
 
 
-def result(inp: List[str], limit: int):
+def result(inp: List[str], limit: int) -> int:
     return solution(inp, limit)
 
 
-def test(examples: List[List[str]]):
+def test(examples: List[List[str]]) -> None:
     example = 0
     exp = 56000011
     res = result(examples[example], 20)
