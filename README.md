@@ -27,8 +27,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 13: Distress Signal](2022/day13) | 🌟 | 🌟 |
 | ✔ [Day 14: Regolith Reservoir](2022/day14) | 🌟 | 🌟 |
 | ✔ [Day 15: Beacon Exclusion Zone](2022/day15) | 🌟 | 🌟 |
+| ✔ [Day 16: Proboscidea Volcanium](2022/day16) | 🌟 | 🌟 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/ftznEeQ.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/TzQtvoz.png)
 
 Note: I did day 15 about 1.5 hours later.
 
