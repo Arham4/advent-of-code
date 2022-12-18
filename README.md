@@ -8,6 +8,8 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 ## AoC 2022 Progress
 
+2022 was arguably an improvement from any previous years since I managed to get many sub-1000 rankings, but at the end of the day I feel pretty bad that I met my end at part 2 of day 17. The difficulty definitely went up exponentially between day 15 and day 16, so I feel happy I was able to do day 16 at least. Nevertheless, day 17's part 2 was a challenge I felt would take too long to bare for me, and as per my tradition, I decidedly ended up stopping AoC for the rest of the year due to failing to complete a part in time before the next day.
+
 The questions from The Advent of Code 2022 can be found [here](https://adventofcode.com/2022/).
 
 | Day  | Part One | Part Two |
@@ -28,8 +30,9 @@ The questions from The Advent of Code 2022 can be found [here](https://adventofc
 | ✔ [Day 14: Regolith Reservoir](2022/day14) | 🌟 | 🌟 |
 | ✔ [Day 15: Beacon Exclusion Zone](2022/day15) | 🌟 | 🌟 |
 | ✔ [Day 16: Proboscidea Volcanium](2022/day16) | 🌟 | 🌟 |
+| ✔ [Day 17: Pyroclastic Flow](2022/day17) | 🌟 | 🚫 |
 
-![The Advent of Code 2022 personal stats](https://i.imgur.com/TzQtvoz.png)
+![The Advent of Code 2022 personal stats](https://i.imgur.com/3qP8Sja.png)
 
 Note: I did day 15 about 1.5 hours later.
 
