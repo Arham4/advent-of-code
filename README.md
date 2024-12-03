@@ -6,6 +6,21 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 [Advent of Code](http://adventofcode.com) is an online event created by [Eric Wastl](https://github.com/topaz). Each year, starting on Dec 1st, an advent calendar of small programming puzzles are unlocked once a day at midnight (EST/UTC-5). Developers of all skill sets are encouraged to solve them in any programming language they choose!
 
+## AoC 2024 Progress
+
+| Day  | Part One | Part Two |
+|---|:---:|:---:|
+| ✔ [Day 1: Historian Hysteria](2024/day01)| 🌟 | 🌟 |
+| ✔ [Day 2: Red-Nosed Reports](2024/day02) | 🌟 | 🌟 |
+
+![The Advent of Code 2024 personal stats](https://i.imgur.com/OsOv0TY.png)
+
+Note: I did days 1 & 2 were done much later as I committed to 2024 a bit late.
+
+## AoC 2023 Progress
+
+Apparently AoC and wedding planning don't go well together. :smile:
+
 ## AoC 2022 Progress
 
 2022 was arguably an improvement from any previous years since I managed to get many sub-1000 rankings, but at the end of the day I feel pretty bad that I met my end at part 2 of day 17. The difficulty definitely went up exponentially between day 15 and day 16, so I feel happy I was able to do day 16 at least. Nevertheless, day 17's part 2 was a challenge I felt would take too long to bare for me, and as per my tradition, I decidedly ended up stopping AoC for the rest of the year due to failing to complete a part in time before the next day.
