@@ -10,8 +10,8 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 
 | Day  | Part One | Part Two | Note |
 |---|:---:|:---:|
-| ✔ [Day 1: Historian Hysteria](2024/day01)| 🌟 | 🌟 ||
-| ✔ [Day 2: Red-Nosed Reports](2024/day02) | 🌟 | 🌟 ||
+| ✔ [Day 1: Historian Hysteria](2024/day01)| 🌟 | 🌟 | |
+| ✔ [Day 2: Red-Nosed Reports](2024/day02) | 🌟 | 🌟 | |
 | ✔ [Day 3: Mull It Over](2024/day03) | 🌟 | 🌟 | Day 3, part 2... seriously? Multiple lines for the input wasn't clarified? |
 
 Note: I did days 1 & 2 were done much later as I committed to 2024 a bit late.
