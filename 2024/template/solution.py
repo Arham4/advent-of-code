@@ -12,19 +12,25 @@ import re
 from re import *
 import heapq
 from heapq import *
-import part1
 
 
-def solution(inp):
+def part1(inp):
     pass
 
 
-def result(inp):
-    return solution(inp)
+def part2(inp):
+    pass
 
 
-def test(examples):
+def p1_test(examples):
     example = 0
     exp = 0
-    res = result(examples[example])
+    res = part1(examples[example])
+    assert res == exp, f"example {example}: result was {res}, expected {exp}"
+
+
+def p2_test(examples):
+    example = 0
+    exp = 0
+    res = part2(examples[example])
     assert res == exp, f"example {example}: result was {res}, expected {exp}"

@@ -2,8 +2,7 @@ import os
 import requests
 import pathlib
 import json
-import part1
-import part2
+import solution
 
 
 def read_file(filename: str, split_lines: bool):
@@ -48,14 +47,14 @@ def main() -> None:
 
     print("--- Part One ---")
     if p1_examples[0]:
-        part1.test(p1_examples)
-    result = part1.result(input)
+        solution.p1_test(p1_examples)
+    result = solution.part1(input)
     print("Result:", result)
 
     if p2_examples[0]:
         print("--- Part Two ---")
-        part2.test(p2_examples)
-        result2 = part2.result(input)
+        solution.p2_test(p2_examples)
+        result2 = solution.part2(input)
         if result2:
             output.write(str(result2))
         else:
