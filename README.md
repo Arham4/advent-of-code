@@ -14,6 +14,7 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 | ✔ [Day 2: Red-Nosed Reports](2024/day02) | 🌟 | 🌟 | |
 | ✔ [Day 3: Mull It Over](2024/day03) | 🌟 | 🌟 | Day 3, part 2... seriously? Multiple lines for the input wasn't clarified? |
 | ✔ [Day 4: Ceres Search](2024/day04) | 🌟 | 🌟 | |
+| ✔ [Day 5: Print Queue](2024/day05) | 🌟 | 🌟 | |
 
 Note: I did days 1 & 2 were done much later as I committed to 2024 a bit late.
 
