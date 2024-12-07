@@ -16,6 +16,7 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 | ✔ [Day 4: Ceres Search](2024/day04) | 🌟 | 🌟 | |
 | ✔ [Day 5: Print Queue](2024/day05) | 🌟 | 🌟 | |
 | ✔ [Day 6: Guard Gallivant](2024/day06) | 🌟 | 🌟 | |
+| ✔ [Day 7: Bridge Repair](2024/day07) | 🌟 | 🌟 | |
 
 Note: I did days 1 & 2 were done much later as I committed to 2024 a bit late.
 
