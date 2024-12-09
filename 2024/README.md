@@ -1,6 +1,6 @@
-# Advent of Code 2022
+# Advent of Code 2024
 
-The questions from The Advent of Code 2022 can be found [here](https://adventofcode.com/2022/).
+The questions from The Advent of Code 2024 can be found [here](https://adventofcode.com/2024/).
 
 ## Setup
 
