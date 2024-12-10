@@ -18,6 +18,8 @@ My solutions for the [Advent of Code](https://adventofcode.com/).
 | ✔ [Day 6: Guard Gallivant](2024/day06) | 🌟 | 🌟 | |
 | ✔ [Day 7: Bridge Repair](2024/day07) | 🌟 | 🌟 | |
 | ✔ [Day 8: Resonant Collinearity](2024/day08) | 🌟 | 🌟 | |
+| ✔ [Day 9: Disk Fragmenter](2024/day09) | 🌟 | 🌟 | Part 2 I ended up doing after work as my `solution_old.py` was taking literal months to run. I ended up learning about a new data structure, Segment Trees, to solve the problem. |
+| ✔ [Day 10: Hoof It](2024/day10) | 🌟 | 🌟 | |
 
 Note: I did days 1 & 2 were done much later as I committed to 2024 a bit late.
 

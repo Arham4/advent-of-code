@@ -49,6 +49,7 @@ def main() -> None:
     print("--- Part One ---")
     if p1_examples[0]:
         solution.p1_test(p1_examples)
+        print("Passed tests")
     start = time.time()
     result = solution.part1(input)
     end = time.time()
@@ -57,6 +58,7 @@ def main() -> None:
     if p2_examples[0]:
         print("--- Part Two ---")
         solution.p2_test(p2_examples)
+        print("Passed tests")
         start = time.time()
         result2 = solution.part2(input)
         end = time.time()
