@@ -86,6 +86,8 @@ def find_a_for_expected_value(a, expected_value):
             possible_a_values.append(possible_a)
         # jnz 0: jnz 0
         '''
+        
+        # TODO ideally use execute_program for this instead of having to do this manually
 
         # bst 4: b % 8
         b = possible_a % 8
