@@ -36,44 +36,21 @@ def bfs(grid, start, goal, avoid):
     return paths[min(paths.keys())]
 
 
-def get_paths(start, numeric, cache):
-    queue = deque([(start, 0, "")])
-    shortest_length = float('inf')
-    shortest = set()
-    while queue:
-        pos, target_index, current_path = queue.popleft()
-        if target_index == len(numeric):
-            if len(current_path) < shortest_length:
-                shortest_length = len(current_path)
-                shortest = {current_path}
-            elif len(current_path) == shortest_length:
-                shortest.add(current_path)
-            continue
-
-        paths = cache[(pos, numeric[target_index])]
-        for path, end in paths:
-            if len(current_path + path) <= shortest_length:
-                queue.append((end, target_index + 1, current_path + path))
-    return shortest
-
-
-def get_robot_paths(start, code, cache, num_robots):
+@cache
+def get_robot_paths(sequence, num_robots, dir_sequences, dir_lengths):
     if num_robots == 1:
-        return get_paths(start, code, cache)
-
-    robot_paths = defaultdict(list)
-    initial_paths = get_paths(start, code, cache)
-
-    for path in initial_paths:
-        sub_robot_paths = get_robot_paths(start, path, cache, num_robots - 1)
-        for sub_path in sub_robot_paths:
-            robot_paths[len(sub_path)].append(sub_path)
+        return sum(get_length(dir_lengths, x, y) for x, y in zip("A" + sequence, sequence))
     
-    return robot_paths
+    length = 0
+    for x, y in zip("A" + sequence, sequence):
+        subsequences = get_sequence(dir_sequences, x, y)
+        length += min(get_robot_paths(subsequence, num_robots - 1, dir_sequences, dir_lengths) for subsequence in subsequences)
+    return length
 
 
 def precompute_paths(grid, avoid):
-    cache = {}
+    sequences = {}
+    lengths = {}
     for y in range(len(grid)):
         for x in range(len(grid[y])):
             if y == avoid[0] and x == avoid[1]:
@@ -83,8 +60,26 @@ def precompute_paths(grid, avoid):
                     if oy == avoid[0] and ox == avoid[1]:
                         continue
                     optimal_paths = bfs(grid, (y, x), grid[oy][ox], avoid)
-                    cache[((y, x), grid[oy][ox])] = optimal_paths
-    return cache
+                    if optimal_paths:
+                        sequences[(grid[y][x], grid[oy][ox])] = tuple(p[0] for p in optimal_paths)
+                        lengths[(grid[y][x], grid[oy][ox])] = len(optimal_paths[0][0])
+    seqs = tuple((k, v) for k, v in sorted(sequences.items()))
+    lens = tuple((k, v) for k, v in sorted(lengths.items()))
+    return seqs, lens
+
+
+def get_sequence(sequences, start, end):
+    for (s, e), paths in sequences:
+        if (s, e) == (start, end):
+            return paths
+    return None
+
+
+def get_length(sequences, start, end):
+    for (s, e), length in sequences:
+        if (s, e) == (start, end):
+            return length
+    return None
 
 
 def part1(inp):
@@ -102,14 +97,14 @@ def part1(inp):
     numeric_cache = precompute_paths(numeric_grid, (3, 0))
     total_complexity = 0
     for code in inp:
-        numeric_path = get_paths((3, 2), code, numeric_cache)
-        robot1_paths = defaultdict(list)
-        for numpath in numeric_path:
-            robot1_paths.update(get_robot_paths((0, 2), numpath, direction_cache, 2))
+        possible_sequences = []
+        for combination in product(*[get_sequence(numeric_cache[0], x, y) for x, y in zip("A" + code, code)]):
+            possible_sequences.append("".join(combination))
+        
+        min_length = min(get_robot_paths(seq, 2, direction_cache[0], direction_cache[1]) for seq in possible_sequences)
         numeric_part = int(code[:3])
-        shortest = min(robot1_paths.keys())
-        print(code, "-", shortest, "*", numeric_part)
-        total_complexity += shortest * numeric_part
+        print(code, "-", min_length, "*", numeric_part)
+        total_complexity += min_length * numeric_part
     return total_complexity
 
 
@@ -128,14 +123,14 @@ def part2(inp):
     numeric_cache = precompute_paths(numeric_grid, (3, 0))
     total_complexity = 0
     for code in inp:
-        numeric_path = get_paths((3, 2), code, numeric_cache)
-        robot1_paths = defaultdict(list)
-        for numpath in numeric_path:
-            robot1_paths.update(get_robot_paths((0, 2), numpath, direction_cache, 25))
+        possible_sequences = []
+        for combination in product(*[get_sequence(numeric_cache[0], x, y) for x, y in zip("A" + code, code)]):
+            possible_sequences.append("".join(combination))
+        
+        min_length = min(get_robot_paths(seq, 25, direction_cache[0], direction_cache[1]) for seq in possible_sequences)
         numeric_part = int(code[:3])
-        shortest = min(robot1_paths.keys())
-        print(code, "-", shortest, "*", numeric_part)
-        total_complexity += shortest * numeric_part
+        print(code, "-", min_length, "*", numeric_part)
+        total_complexity += min_length * numeric_part
     return total_complexity
 
 
